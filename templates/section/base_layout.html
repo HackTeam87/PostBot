@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    {% if title %}
+    <title>{{ title }} - Admin</title>
+    {% else %}
+    <title>Welcome</title>
+    {% endif %}
+
+    {% include 'section/style.html' %}
+    
+</head>
+
+<body class="g-sidenav-show  bg-gray-200">
+
+  {% include 'section/aside.html' %}
+
+  <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+
+    {% include 'section/navbar.html' %}
+
+    <div class="container-fluid py-4">
+
+        {% block content %}        
+        {% endblock %}
+
+      {% include 'section/footer.html' %} 
+
+    </div>
+  </main>
+  
+  {% include 'section/script.html' %}
+
+</body>
+
+</html>
