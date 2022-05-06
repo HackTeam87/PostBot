@@ -7,7 +7,7 @@ import telebot
 from telebot import types
 from core.config import TELEGRAM_TOCKEN
 
-#tocken = '5171909645:AAG8HefH3P9iSSk4eMec70jBde24Vxtb3b8'
+
 tocken = TELEGRAM_TOCKEN
 bot = telebot.TeleBot(tocken)
 # parse_mode='HTML'
